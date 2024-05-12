@@ -1,0 +1,53 @@
+/* html, body {
+    background: #333;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+  } */
+  
+  .svg-wrapper {
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: fit-content;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
+  .shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -434;
+    stroke-width: 9px;
+    stroke: var(--primary2);
+  }
+  
+  .text {
+    color: #fff;
+    font-size: 33px;
+    letter-spacing: 5px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+    text-anchor: middle;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dasharray: 140 540;
+      stroke-dashoffset: -474;
+      stroke-width: 9px;
+    }
+    100% {
+      stroke-dasharray: 820;
+      stroke-dashoffset: 0;
+      stroke-width: 3px;
+    }
+  }
+  
+  .svg-wrapper:hover .shape {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+  }
