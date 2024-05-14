@@ -10,6 +10,8 @@ import Lottie from "lottie-react";
 import scienceLottie from "../public/assets/Animation1715490774279.json";
 import Navbar from "./components/navbar/navbar";
 import UpcomingEvents from "./components/upcomingEvents/UpcomingEvents";
+import Faq from "./components/FAQ/Faq";
+import HomeAbout from "./components/homeAbout/HomeAbout";
 
 
 
@@ -52,9 +54,16 @@ export default function Home() {
         </div>
       </div>
 
+      {/* home about  */}
+      <HomeAbout/>
+
       {/* upcoming events  */}
       <UpcomingEvents/>
 
+      {/* faq  */}
+      <Faq/>
+
+      
     </main>
   );
 }
